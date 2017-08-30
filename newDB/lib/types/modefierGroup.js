@@ -1,4 +1,6 @@
-const { ModefierGroup } = require('../connectors');
+const { ModefierGroup, ModefierOption, groupBy } = require('../connectors');
+const DataLoader = require('dataloader');
+const modefierOptionsLoader = new DataLoader(keys => ModefierOption.findAll({ where: {modefier_group_id: keys }}).then(data => groupBy(data, 'modefier_group_id')));
 
 const type = `
   type ModefierGroup {
@@ -13,7 +15,7 @@ const resolvers = {
     modefierGroup: (_, args) => ModefierGroup.find({ where: args })
   },
   ModefierGroup: {
-    modefierOptions: (modefierGroup) => modefierGroup.getModefierOptions()
+    modefierOptions: (modefierGroup) => modefierOptionsLoader.load(modefierGroup.id)
   }
 };
 

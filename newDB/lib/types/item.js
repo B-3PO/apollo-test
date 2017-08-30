@@ -1,4 +1,5 @@
-const { Item } = require('../connectors');
+const { Item, ItemsModefierGroups, ModefierGroup } = require('../connectors');
+const DataLoader = require('dataloader');
 
 const type = `
   type Item {

@@ -1,6 +1,7 @@
 const Sequelize = require('sequelize');
 const db = require('./database');
 const ModefierOptionModel = require('./modefierOption');
+// const ItemsModefierGroupsModel = require('./itemsModefierGroups');
 
 const ModefierGroupModel = db.define('modefier_group', {
   name: { type: Sequelize.STRING }
