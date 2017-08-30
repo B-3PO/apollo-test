@@ -1,9 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const { graphqlExpress } = require('apollo-server-express');
-const schema = require('./lib/schema/main');
 const { graphiqlExpress } = require('graphql-server-express');
-// const connectors = require('./lib/connectors');
+const schema = require('./lib/schema');
 
 const port = 8080;
 let app = express();
