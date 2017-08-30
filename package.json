@@ -13,6 +13,7 @@
     "apollo-server-express": "^1.1.2",
     "better-sqlite3": "^3.3.0",
     "body-parser": "^1.17.2",
+    "dataloader-sequelize": "^1.5.2",
     "express": "^4.15.4",
     "graphql": "^0.10.5",
     "graphql-server-express": "^1.1.2",
