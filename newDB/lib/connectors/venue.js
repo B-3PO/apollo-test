@@ -5,4 +5,5 @@ const VenueModel = db.define('venue', {
   name: { type: Sequelize.STRING }
 }, { timestamps: false });
 
+
 module.exports = VenueModel;

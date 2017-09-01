@@ -4,6 +4,7 @@ const type = `
   type Venue {
     id: Int!,
     name: String,
+    menus: [Menu]
     locations: [Location]
   }
 `;
@@ -13,7 +14,8 @@ const resolvers = {
     venue: (_, args) => Venue.find({ where: args })
   },
   Venue: {
-    locations: venue => venue.getLocations()
+    locations: venue => venue.getLocations(),
+    menus: venue => venue.getMenus()
   }
 };
 

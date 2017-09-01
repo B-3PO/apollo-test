@@ -1,11 +1,11 @@
-const { Item, ItemsModefierGroups, ModefierGroup } = require('../connectors');
+const { Item, ItemsModifierGroups, ModifierGroup } = require('../connectors');
 const DataLoader = require('dataloader');
 
 const type = `
   type Item {
     id: Int!
     name: String
-    modefierGroups: [ModefierGroup]
+    modifierGroups: [ModifierGroup]
   }
 `;
 
@@ -14,7 +14,7 @@ const resolvers = {
     item: (_, args) => Item.find({ where: args }),
   },
   Item: {
-    modefierGroups: (item) => item.getModefierGroups()
+    modifierGroups: (item) => item.getModifierGroups()
   }
 };
 

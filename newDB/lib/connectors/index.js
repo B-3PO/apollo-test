@@ -8,9 +8,10 @@ module.exports = {
   Category: require('./category'),
   CategoriesItems: require('./categoriesItems'),
   Item: require('./item'),
-  ItemsModefierGroups: require('./itemsModefierGroups'),
-  ModefierGroup: require('./modefierGroup'),
-  ModefierOption: require('./modefierOption'),
+  ItemsModifierGroups: require('./itemsModifierGroups'),
+  ModifierGroup: require('./modifierGroup'),
+  ModifierOption: require('./modifierOption'),
+  VenuesMenus: require('./venuesMenus'),
   groupBy: groupBy
 };
 

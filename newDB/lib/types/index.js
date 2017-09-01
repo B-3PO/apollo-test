@@ -4,8 +4,8 @@ module.exports = combine(
   require('./menu'),
   require('./category'),
   require('./item'),
-  require('./modefierGroup'),
-  require('./modefierOption')
+  require('./modifierGroup'),
+  require('./modifierOption')
 );
 
 

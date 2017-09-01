@@ -20,6 +20,7 @@
     "graphql-server-express": "^1.1.2",
     "graphql-tools": "^1.2.1",
     "mysql2": "^1.4.2",
+    "requester": "git@github.com:bypasslane/requester.git#v1.0.1",
     "sequelize": "^4.7.5",
     "sqlite3": "^3.1.9"
   }
